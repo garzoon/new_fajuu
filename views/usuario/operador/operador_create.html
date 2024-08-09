@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Usuario</title>
+    </head>
+    <body>
+        <main>
+            <section>
+                <h1>Nuevo usuario</h1>
+                <form method="post" action="../../../php/usuarios/operador/operador_create.php">
+                    <label>Rol</label>
+                    <select name="rol" id="rol" required>
+                        <option selected value="">seleccionar</option>
+                        <option value="1">administrador</option>   
+                        <option value="2">usuario</option>
+                    </select>
+                    <label>Id usuario</label>
+                    <input name="user_id" type="text" autocomplete="off" required>
+
+                    <label for="">Nombre/s</label>
+                    <input name="user_nombres" type="text" autocomplete="off" required>
+
+                    <label for="">Apellido/s</label>
+                    <input name="user_apellidos" type="text" autocomplete="off" required>
+
+                    <label for="">Contraseña</label>
+                    <input name="user_password" id="password" type="password" autocomplete="off" required>
+
+                    <label for="">Confirmar contraseña</label>
+                    <input id="confirmPassword" type="password" autocomplete="off" required>
+                    <p id="mensaje"></p>
+
+                    <label for="">Email</label>
+                    <input name="user_email" type="text" autocomplete="off" required>
+
+                    <label for="">Ciudad</label>
+                    <input name="user_ciudad" type="text" autocomplete="off" required>
+
+                    <label for="">Dirección</label>
+                    <input name="user_direccion" type="text" autocomplete="off" required>
+
+                    <label for="">Telefono</label>
+                    <input name="user_telefono" type="number" autocomplete="off" required>
+
+                    <input id="submitButton" type="submit" onclick="" value="Crear">
+                </form>
+            </section>
+        </main>
+        <script src="../../../../../js/validar_contrasena.js"></script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Entrada</title>
+    </head>
+    <body>
+        <main>
+            <form action="../../php/entrada_productos/entrada_save.php" method="post">
+                <div>
+                    <h1>Proveedor</h1>
+                    <label>Id Proveedor</label>
+                    <input name="prov_id" type="number" required autocomplete="off">
+                </div>
+
+                <div>
+                    <h1>Factura</h1>
+                    <label>Id Factura</label>
+                    <input name="ent_numero_factura" type="number" required autocomplete="off">
+                </div>
+
+                <div>
+                    <h1>Productos</h1>
+                    <label >Id Producto</label>
+                    <input name="prod_id" type="number" required autocomplete="off">
+                    <label >Cantidad</label>
+                    <input name="prod_cantidad" type="number" required autocomplete="off">
+                </div>
+                <input name="submit" type="submit" value="Cargar">
+            </form>
+            <div>
+                <table border="1">
+                    <tr>
+                        <th>Item</th>
+                        <th>Id producto</th>
+                        <th>Descripción</th>
+                        <th>Cantidad</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </body>
+</html>

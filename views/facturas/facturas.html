@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mis facturas</title>  
+    </head>
+    <body>
+        <main class="main">
+            <section class="section-misFacturas">
+                <h1>Buscar facturas</h1>
+                <form action="../../php/facturas/fact_redireccionar.php" method="post">
+                    <label class="lbl-misFacturas" for="slc-misFacturas">Tipo de factura</label>
+                    <select name="tipo">
+                        <option value="">Seleccionar</option>
+                        <option value="fact_salida">Salidas</option>
+                        <option value="fact_entrada">Entradas</option>
+                    </select>
+                    <input type="submit" value="Ir">
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
